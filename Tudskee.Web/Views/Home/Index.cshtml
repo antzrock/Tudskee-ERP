@@ -1,0 +1,73 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="tudskee_erp">
+    <head>
+        <meta charset="utf-8">
+        <title>Tudskee ERP</title>
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="Tudskee ERP" name="description">
+        <meta content="Antonio Amiel L. Yap" name="author">
+        <base href="/">
+
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=RobotoDraft:300,400,400italic,500,700">
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700">
+
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+
+    </head>
+
+    <body class="infobar-offcanvas" ng-controller="rootCtrl">
+        <div id="headerbar">
+            <div class="container-fluid">
+            
+            </div>
+        </div>
+        <header id="topnav" class="navbar navbar-midnightblue navbar-fixed-top clearfix" role="banner">
+            <span id="trigger-sidebar" class="toolbar-trigger toolbar-icon-bg">
+                <a title="Toggle Sidebar" data-placement="right" data-toggle="tooltips">
+                    <span class="icon-bg">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </span>
+                </a>
+            </span>
+            <a class="navbar-brand" href="index.html">Tudskee ERP</a>
+        </header>
+        <div id="wrapper">
+            <div id="layout-static">
+                <div class="static-sidebar-wrapper sidebar-midnightblue">
+                
+                </div>
+                <div class="static-content-wrapper">
+                    <div class="static-content">
+                        <div class="page-content" data-ng-view="">
+
+                        </div>
+                    </div>
+                    <footer role="contentinfo" style="width: 1271px;">
+                        <div class="clearfix">
+                            <ul class="list-unstyled list-inline pull-left">
+                                <li>
+                                    <h6 style="margin: 0;"> © 2016 Tudskee</h6>
+                                </li>
+                            </ul>
+                            <button id="back-to-top" class="pull-right btn btn-link btn-xs hidden-print">
+                                <i class="fa fa-arrow-up"></i>
+                            </button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        @Scripts.Render("~/bundles/vendors")
+        @Scripts.Render("~/bundles/spa")
+</body>
+</html>
