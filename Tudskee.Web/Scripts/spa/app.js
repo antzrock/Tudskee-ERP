@@ -13,8 +13,8 @@
     function config($routeProvider, $locationProvider) {
         $routeProvider
             .when("/", {
-                templateUrl: "scripts/spa/dashboard/dashboard.html",
-                controller: "dashboardCtrl"
+                templateUrl: "scripts/spa/login/login.html",
+                controller: "loginCtrl"
             })
             .when("/dashboard", {
                 templateUrl: "scripts/spa/dashboard/dashboard.html",

@@ -1,1 +1,54 @@
-﻿
+﻿<div class="container" id="login-form">
+    <a href="index.html" class="login-logo"><img src="http://placehold.it/300&text=Placeholder"></a>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h2>Login Form</h2></div>
+                <div class="panel-body">
+
+                    <form name="userLoginForm" class="form-horizontal" novalidate angular-validator angular-validator-submit="login()">
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Email Username" data-parsley-minlength="6" placeholder="At least 6 characters" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-key"></i>
+                                    </span>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <a href="extras-forgotpassword.html" class="pull-left">Forgot password?</a>
+                                <div class="checkbox-inline icheck pull-right pt0">
+                                    <label for="">
+                                        <input type="checkbox"></input>
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel-footer">
+                            <div class="clearfix">
+                                <a href="extras-registration.html" class="btn btn-default pull-left">Register</a>
+                                <!--<a href="extras-login.html" class="btn btn-primary pull-right">Login</a>-->
+                                <button class="btn btn-primary pull-right" type="submit">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

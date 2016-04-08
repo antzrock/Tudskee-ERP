@@ -42,7 +42,9 @@ namespace Tudskee.Web
                 "~/Scripts/spa/home/rootCtrl.js",
                 "~/Scripts/spa/dashboard/dashboardCtrl.js",
                 "~/Scripts/spa/layout/sideBar.directive.js",
-                "~/Scripts/spa/layout/topBar.directive.js"
+                "~/Scripts/spa/layout/topBar.directive.js",
+                "~/Scripts/spa/login/loginCtrl.js",
+                "~/Scripts/spa/services/notificationService.js"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

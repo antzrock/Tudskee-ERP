@@ -1,3 +1,19 @@
-﻿<div class="static-sidebar-wrapper sidebar-midnightblue">
-
+﻿<div class="static-sidebar-wrapper sidebar-midnightblue" ng-hide="!isUserLoggedIn">
+    <div class="static-sidebar">
+        <div class="sidebar">
+            <div class="widget stay-on-collapse" id="widget-welcomebox">
+                <div class="widget-body welcome-box tabular">
+                    <div class="tabular-row">
+                        <div class="tabular-cell welcome-avatar">
+                            <a href="#"><img src="http://placehold.it/300&text=Placeholder" class="avatar"></a>
+                        </div>
+                        <div class="tabular-cell welcome-options">
+                            <span class="welcome-text">Welcome,</span>
+                            <a href="#" class="name">{{user.Fullname}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

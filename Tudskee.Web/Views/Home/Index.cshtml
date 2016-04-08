@@ -24,7 +24,7 @@
 
     </head>
 
-    <body class="infobar-offcanvas" ng-controller="rootCtrl">
+    <body ng-class="{'infobar-offcanvas' : isUserLoggedIn, 'focused-form' : !isUserLoggedIn}" ng-controller="rootCtrl">
         <top-bar></top-bar>
         <div id="wrapper">
             <div id="layout-static">

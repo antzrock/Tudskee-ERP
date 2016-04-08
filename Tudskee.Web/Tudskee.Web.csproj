@@ -186,8 +186,10 @@
     <Content Include="Scripts\spa\layout\topBar.directive.js" />
     <Content Include="Scripts\spa\layout\topBar.html" />
     <Content Include="Scripts\spa\login\login.html" />
+    <Content Include="Scripts\spa\login\loginCtrl.js" />
     <Content Include="Scripts\spa\modules\common.core.js" />
     <Content Include="Scripts\spa\modules\common.ui.js" />
+    <Content Include="Scripts\spa\services\notificationService.js" />
     <Content Include="Scripts\vendors\angucomplete-alt.min.js" />
     <Content Include="Scripts\vendors\angular-animate.js" />
     <Content Include="Scripts\vendors\angular-base64.js" />
