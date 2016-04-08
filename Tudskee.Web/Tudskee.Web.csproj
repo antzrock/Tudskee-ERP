@@ -181,6 +181,11 @@
     <Content Include="Scripts\spa\dashboard\dashboard.html" />
     <Content Include="Scripts\spa\dashboard\dashboardCtrl.js" />
     <Content Include="Scripts\spa\home\rootCtrl.js" />
+    <Content Include="Scripts\spa\layout\sideBar.directive.js" />
+    <Content Include="Scripts\spa\layout\sideBar.html" />
+    <Content Include="Scripts\spa\layout\topBar.directive.js" />
+    <Content Include="Scripts\spa\layout\topBar.html" />
+    <Content Include="Scripts\spa\login\login.html" />
     <Content Include="Scripts\spa\modules\common.core.js" />
     <Content Include="Scripts\spa\modules\common.ui.js" />
     <Content Include="Scripts\vendors\angucomplete-alt.min.js" />

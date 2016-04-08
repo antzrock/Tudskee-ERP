@@ -25,26 +25,10 @@
     </head>
 
     <body class="infobar-offcanvas" ng-controller="rootCtrl">
-        <div id="headerbar">
-            <div class="container-fluid">
-            
-            </div>
-        </div>
-        <header id="topnav" class="navbar navbar-midnightblue navbar-fixed-top clearfix" role="banner">
-            <span id="trigger-sidebar" class="toolbar-trigger toolbar-icon-bg">
-                <a title="Toggle Sidebar" data-placement="right" data-toggle="tooltips">
-                    <span class="icon-bg">
-                        <i class="fa fa-fw fa-bars"></i>
-                    </span>
-                </a>
-            </span>
-            <a class="navbar-brand" href="index.html">Tudskee ERP</a>
-        </header>
+        <top-bar></top-bar>
         <div id="wrapper">
             <div id="layout-static">
-                <div class="static-sidebar-wrapper sidebar-midnightblue">
-                
-                </div>
+                <side-bar></side-bar>
                 <div class="static-content-wrapper">
                     <div class="static-content">
                         <div class="page-content" data-ng-view="">
