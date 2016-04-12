@@ -11,6 +11,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Tudskee.Data.Mappings;
+using Tudskee.Entities;
 
 namespace Tudskee.Data.Infrastructure
 {
@@ -28,7 +30,7 @@ namespace Tudskee.Data.Infrastructure
                 {
                     _sessionFactory = Fluently.Configure()
                           .Database(MySQLConfiguration.Standard.ConnectionString(c => c.FromConnectionStringWithKey("tudskee_connection")))
-                          .Mappings(m => m.AutoMappings.Add(CreateMappings()))
+                          .Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<IEntityBase>(new AutomappingConfiguration())))
                           .ExposeConfiguration(UpdateSchema)
                           .BuildSessionFactory();
                 }
@@ -43,22 +45,13 @@ namespace Tudskee.Data.Infrastructure
                 {
                     _sessionFactory = Fluently.Configure()
                           .Database(MySQLConfiguration.Standard.ConnectionString(c => c.FromConnectionStringWithKey("tudskee_connection")))
-                          .Mappings(m => m.AutoMappings.Add(CreateMappings()))
+                          .Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<IEntityBase>(new AutomappingConfiguration())))
                           .ExposeConfiguration(UpdateSchema)
                           .BuildSessionFactory();
                 }
             }
 
             return _sessionFactory.OpenSession();
-        }
-
-        // Returns our mappings
-        private static AutoPersistenceModel CreateMappings()
-        {
-            return AutoMap
-                .Assembly(System.Reflection.Assembly.GetCallingAssembly())
-                .Where(t => t.Namespace == "Tudskee.Entities")
-                .Conventions.Setup(c => c.Add(DefaultCascade.SaveUpdate()));
         }
 
         // Drops and creates the database schema

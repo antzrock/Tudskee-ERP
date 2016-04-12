@@ -57,6 +57,7 @@
     <Compile Include="Infrastructure\IHibernateSessionFactory.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Mappings\AutomappingConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EntityBaseRepository.cs" />
     <Compile Include="Repositories\IEntityBaseRepository.cs" />
@@ -73,7 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
-    <Folder Include="Mappings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

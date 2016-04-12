@@ -8,7 +8,7 @@ namespace Tudskee.Entities
 {
     public interface IEntityBase
     {
-        int ID { get; set; }
+        int Id { get; set; }
 
         int CreatedBy { get; set; }
 
